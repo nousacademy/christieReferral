@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Referrals</title>
+        <link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="css/boilerplate.css"/>
+    </head>
+    <body ng-controller="onePage">
+
+        <div id="primaryContainer" class="primaryContainer clearfix">
+
+
+            <div id="Parent" class="clearfix">
+                <!--<img id="image4" src="img/lois-logo.svg" class="image" />-->
+
+                <input id="Text_Box" class="clearfix" placeholder="Type Your Promo Code Here" ng-model="query">
+                <div class="submitButton" ng-click='showUserInfo()'>Submit</div>
+
+                <div id="Referrals" class="clearfix">
+                    <div class="tableContainer" ng-show='userInfo'>
+                        <table>
+                            <tr>
+
+                                <th><div class="letters">FIRST</div></th>
+                            <th><div class="letters">LAST</div></th>
+                            <th><div class="letters">EMAIL</div></th>
+                            <th><div class="letters">PHONE</div></th>
+                            <th><div class="letters">STYLIST</div></th>
+                            </tr>
+                            <tr>
+                                <td>{{filtered[0].firstname}}</td>
+                                <td>{{filtered[0].lastname}}</td>
+                                <td>{{filtered[0].email}}</td>
+                                <td>{{filtered[0].phone}}</td>
+                                <td>{{filtered[0].stylist}}</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+
+
+                    <p id="ref_head">
+                        REFERRALS <span class="pipe">|</span>
+
+                        <a ng-click="modalAppear()">
+                            <img id="image5" src="img/buttons-02.svg" class="image" />
+                        </a>
+                        <span class="plusSign" ng-click='incRefUses()'><img src='img/buttons-01.svg'></span>
+                        <span class="minusSign" ng-click='decRefUses()'><img src='img/buttons-03.svg'></span>
+                    <div class="total">TOTAL</div>
+                    <div class="remaining">REMAINING</div>
+                    <div class='referralLength' ng-show='userInfo'>
+                        {{filtered.length - 1}}                     
+                    </div>
+                    <div class='remainingLength' ng-show='userInfo'>
+                        {{filteredStatus}}
+                    </div>
+                    <div class="addedReferrals" ng-show='userInfo'>
+                        {{refUsage}}
+
+                    </div>
+
+                    </p>
+
+                    <div id="Box" class="clearfix" >
+                        <a ng-click='referralConfirm()'>
+                            <img src="img/submitbutton.png" class='submitButtonRefUsage'>
+
+                        </a>  <!-- ng-click='updateBackEnd()' -->    
+                    </div>                    
+                    <div id="box" class="clearfix">                   
+                        <div ng-show='userInfo'>
+
+                            <div ng-repeat="list in filtered" ng-class="{refData: true, repeatFirst: $first}" ng-show="!$first">
+
+                                {{list.firstname}}
+                                {{list.lastname}}
+                                {{list.email}}
+                                {{list.phone}}
+                                <!--{{list.ref_code}}-->
+                                {{list.stylist}}
+                                <!--{{list.status}}-->
+                            </div>  
+                        </div>
+                    </div>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='modalContainer' ng-show='modalPopUp'>
+        <div class="modalBackdrop"></div>
+        <div class='modal'>
+            <img src='img/pleaseenter.png' class="pleaseEnter">
+            <div class="inputs">
+                <input type="text" class="firstName" placeholder="FIRST" ng-model='user.firstname'>
+                <input type="text" class="lastName" placeholder="LAST" ng-model='user.lastname'>
+                <input type="text" class='email' placeholder="EMAIL" ng-model='user.email'>
+                <input type="number" class="phone" placeholder="PHONE" ng-model='user.phone'>
+
+            </div>
+            <img src="img/submitbutton.png" class="submitModalButton" ng-click="createUser()">
+        </div>
+    </div>
+
+    <div class='modalContainer' ng-show='modalReferral'>
+        <div class="modalBackdrop"></div>
+        <div class='modalApproval'>
+            WOULD YOU LIKE TO APPROVE {{filteredStatus}} REFERRALS?
+            <div class="updateModalButton" ng-click="updateBackEnd()">YES</div>
+            <div class="updateModalButtonCancel" ng-click="modalReferral">NO</div>
+        </div>       
+    </div>
+
+
+
+
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+</body>
+</html>

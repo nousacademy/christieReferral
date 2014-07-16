@@ -1,0 +1,573 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-height: 100%; */
+    width: 100%;
+}
+
+#Parent {
+    float: left;
+    height: 639px;
+    margin-left: 6.132562%;
+    margin-top: 45px;
+    clear: none;
+    width: 87.72961%;
+    background-color: rgb(217, 217, 217);
+    box-shadow: rgb(84, 84, 84) 0px 5px 19px 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: relative;
+}
+
+body {
+    color: rgb(205, 205, 205);
+}
+
+#Text_Box {
+    float: none;
+    height: 39px;
+    clear: none;
+    width: 373.28125px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(208, 208, 208);
+}
+
+#image4 {
+    float: none;
+    width: 261.59375px;
+    max-width: none;
+    height: 101px;
+    margin-left: auto;
+    margin-top: 52px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+}
+
+#Referrals {
+    float: left;
+    height: 475px;
+    margin-left: 0%;
+    margin-top: 16px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+#box {
+    float: none;
+    height: 208px;
+    margin-left: auto;
+    margin-top: 24px;
+    clear: none;
+    width: 90.446412%;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid rgb(208, 208, 208);
+    margin-right: auto;
+    overflow: scroll;
+    position: relative;
+}
+
+#ref_head {
+    float: none;
+    font-size: 2.2em;
+    width: 18.188935%;
+    height: 32px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1em;
+    margin-left: 4.72741%;
+    margin-top: 38px;
+    clear: none;
+    min-height: 50px;
+    text-indent: 0px;
+    font-family: inherit;
+    margin-right: 0px;
+    color: black;
+}
+
+#image3 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    position: absolute;
+}
+
+#image2 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    position: absolute;
+}
+
+#image1 {
+    float: left;
+    width: auto;
+    /* max-width: 100%; */
+    /* height: auto; */
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    position: absolute;
+}
+
+#Box {
+    float: left;
+    height: 29px;
+    margin-left: 77.816003%;
+    margin-top: -29px;
+    clear: none;
+    width: 9.726589%;
+}
+
+#image {
+    float: left;
+    width: auto;
+    /* max-width: 100%; */
+    /* height: auto; */
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    position: absolute;
+}
+
+#image5 {
+    float: none;
+    width: 99px;
+    max-width: 100%;
+    height: 76.153846%;
+    margin-left: auto;
+    margin-top: 1px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 594px) {
+    #Text_Box {
+        margin-top: 31px;
+        clear: none;
+        margin-left: auto;
+        height: 32px;
+        width: 239.28125px;
+        margin-right: auto;
+    }
+
+    #image4 {
+        width: 175.71874827000002px;
+        height: 146px;
+        margin-top: 16px;
+        margin-left: auto;
+        clear: none;
+        max-width: none;
+        margin-right: auto;
+    }
+
+    #Referrals {
+        margin-top: 106px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+        height: 308px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #Text_Box {
+        margin-top: 0px;
+        margin-left: auto;
+        clear: none;
+        height: 26.203125px;
+        width: 196.015625px;
+        margin-right: auto;
+    }
+
+    #image4 {
+        width: 94.578125px;
+        height: 155.5625px;
+        margin-top: 16px;
+        margin-left: auto;
+        clear: none;
+        max-width: none;
+        margin-right: auto;
+    }
+
+    #Referrals {
+        margin-top: 126.234375px;
+        margin-left: 0%;
+        clear: none;
+        width: 100%;
+        height: 308px;
+    }
+
+    #box {
+        margin-top: 19px;
+        clear: none;
+        width: 80.444075%;
+        height: 175px;
+        overflow: scroll;
+    }
+
+    #ref_head {
+        height: auto;
+        min-height: 50px;
+        width: 70.826407%;
+        text-align: left;
+    }
+}
+
+.submitButton {
+    position: static;   
+    color: white;
+    width: 6.193079em;
+    height: 33px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: rgba(83, 83, 83, 0.317647) 0px 1px 0px 0px;
+    top: 213px;
+    left: 588px;
+    outline:none;
+    display: block;
+    margin: 21px auto;
+    border: 1px solid rgba(154, 154, 154, 0.6);
+    background: rgb(225, 211, 123);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.modal {
+    background-color: #818285;
+    text-align: center;
+    width: 838px;
+    height: 354px;
+    position: relative;
+    margin: auto;
+    top: 170px;
+    border-radius: 3%;
+}
+
+.pleaseEnter {
+    width: 94%;
+}
+
+.firstName, 
+.lastName, 
+.email, 
+.phone {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 9px;
+    outline: none;
+    border: 1px #818285;
+    color: black;
+}
+
+.submitModalButton {
+    width: 14%;   
+}
+
+.inputs {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 80%;
+}
+
+.modalBackdrop {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.modalContainer {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+:-ms-input-placeholder {  
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.name {
+    color: rgb(225, 211, 123);
+    float: left; 
+    font: 1.4em helvetica; 
+    letter-spacing: 0.1em; 
+    line-height: 1em; 
+    margin: 36px 0 0 2.427944%; 
+    min-height: 42px; 
+    text-align: left; 
+    width: 16.965975%;
+    position: absolute;
+    top: 292px;
+    left: 15px;
+}
+
+.refData {
+    display: inline-block;
+    width: 29%;
+    height: 100px;
+    margin:2%;
+    box-shadow: 0px 10px 20px -1px #888888;
+    color: #333;
+    font-family: arial;
+    font-weight: 20px;
+}
+
+.repeatFirst {
+    color: rgb(225, 211, 123);
+    background-color: #4D4D4D;
+}
+
+.referralLength {
+    position: absolute; 
+    margin-left: 8em;
+    margin-top: -1.4em;
+    border-radius: 50%;
+    background-color: #ADADAD;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 38px;
+    display: initial;
+}
+
+tr:nth-child(even) {
+    background-color: #E6E6E6;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+tr:nth-child(odd) {
+    background-color: #F2F2F2;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    width: 100%;
+}
+
+th {
+    color: white;
+    background-color: #4D4D4D;
+    font-family: Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 100;  
+    width: 100%;
+}
+
+tbody {
+    text-align: center;
+    padding: 0;
+    display: block;
+    outline: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.pipe {
+    position: absolute;
+    margin-left: 6.7em;
+    margin-top: -1em;
+    font-weight: 100;
+    color: #ADADAD;
+    line-height: 34px;
+}
+
+.total {
+    margin-top: -7em;    
+    margin-left: 31.4em;
+    position: absolute;
+    font-size: 10px;
+    color: #ADADAD;
+}
+
+.remaining {
+    margin-top: -7em; 
+    margin-left: 42.2em; position: absolute; font-size: 10px; color: #ADADAD;
+
+}
+
+.remainingLength {
+    position: absolute; 
+    margin-left: 11.2em;
+    margin-top: -1.4em;
+    border-radius: 50%;
+    background-color: #ADADAD;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 38px;
+    display: initial;
+}
+
+.addedReferrals {
+    position: absolute; 
+    margin-left: 14.4em;
+    margin-top: -1.4em;
+    border-radius: 50%;
+    background-color: #ADADAD;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 38px;
+    display: initial;
+}
+
+.plusSign {
+    margin-top: -5.5em;    
+    margin-left: 25.7em;
+    position: absolute;
+    font-size: 20px;
+    color: #ADADAD;
+    width: 33px; 
+}
+
+.submitButtonRefUsage {
+    width: 88px;
+
+    margin-top: -2em;
+}
+
+.minusSign {
+    margin-top: -1.7em;    
+    margin-left: 25.7em;
+    position: absolute;
+    font-size: 20px;
+    color: #ADADAD;
+    width: 33px;
+}
+
+.infoHeader {
+    margin-left: auto;
+    margin-top: 42px;
+    clear: none;
+    width: 90.446412%;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    /* text-align: center; */
+    letter-spacing: 8px;
+}
+
+.tableContainer {
+    width: 90%;   
+    text-align: center;
+}
+
+.letters {
+    margin: 8px;
+    
+    text-align: center;
+    letter-spacing: 13px;
+    width: auto;
+}
+
+.modalApproval {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    width: 838px;
+    height: 354px;
+    position: relative;
+    margin: auto;
+    top: 170px;
+    border-radius: 3%;
+    font-family: inherit;
+    font-size: 62px;
+    font-weight: 600;
+}
+
+.updateModalButton {
+    width: 170px;
+    height: 75px;
+    background-color: black;
+    display: block;
+    border-radius: 30%;
+    left: 500px;
+    top: 250px;
+    position: absolute;
+    color: white;
+    font-weight: 300;
+}
+
+.updateModalButtonCancel {
+    width: 170px;
+    height: 75px;
+    background-color: black;
+    display: block;
+    border-radius: 30%;
+    left: 135px;
+    top: 249px;
+    position: absolute;
+    color: white;
+    font-weight: 300;
+}
